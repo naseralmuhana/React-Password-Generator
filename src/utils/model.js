@@ -48,6 +48,7 @@ export const generatePassword = (randomNumbersArray, characterList) => {
       // inspired by: https://stackoverflow.com/questions/1527803/
       // (only we do not need Math.floor() as bitwise operator >> is used)
       .map(() => (number * characterList.length) >> 16)
+      // eslint-disable-next-line no-loop-func
       .out((randomIndex) => {
         password += characterList[randomIndex]
       })
