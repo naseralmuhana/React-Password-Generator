@@ -8,11 +8,16 @@ html {
   text-align: center;
 }
 body {
-    overflow: hidden;
+    overflow-x: hidden;
   }
 @media (max-width: 992px) {
   body {
     font-size: 0.7rem;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    font-family: san-serif;
   }
 }
 `

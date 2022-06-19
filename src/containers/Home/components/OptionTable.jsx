@@ -10,6 +10,7 @@ import {
 
 const Table = styled.table`
   margin: 20px auto;
+
   .description,
   input {
     width: 100%;
@@ -35,6 +36,11 @@ const Table = styled.table`
       font-size: 0.5rem;
     }
   }
+  @media (max-width: 600px) {
+    .td-description {
+      display: none;
+    }
+  }
 `
 
 const OptionTable = ({
@@ -53,7 +59,7 @@ const OptionTable = ({
               <td>
                 <div className="description">{option.name}</div>
               </td>
-              <td>
+              <td className="td-description">
                 <div className="description">{option.characters}</div>
               </td>
               <td>
