@@ -4,7 +4,7 @@ export const GlobalStyle = createGlobalStyle`
 html {
   padding: 0;
   margin: 0;
-  font-family: 'Zilla Slab', serif;
+  font-family: 'Zilla Slab', san-serif;
   text-align: center;
 }
 body {

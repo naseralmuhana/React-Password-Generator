@@ -29,7 +29,7 @@ const Title = styled.div`
 
 const GeneratedPasswords = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   place-items: center;
   .password {
     position: relative;
